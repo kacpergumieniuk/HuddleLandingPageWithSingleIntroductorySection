@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: #674baf;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.container .left {
+  width: 60%;
+  margin-left: 60px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .left #logo {
+  margin-bottom: 60px;
+  width: 180px;
+}
+
+.container .right {
+  width: 40%;
+  height: 100%;
+  margin-right: 60px;
+}
+
+.container .right h1 {
+  margin-top: 175px;
+  max-width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 38px;
+}
+
+.container .right p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  max-width: 90%;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.container .right button {
+  width: 180px;
+  height: 50px;
+  border-radius: 26px;
+  color: #674baf;
+  margin-bottom: 100px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .right button:hover {
+  background-color: #e882e8;
+}
+
+.container .right .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 0px;
+}
+
+.container .right .social .social-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  color: white;
+}
+
+.container .right .social .social-button i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.container .right .social .social-button:hover {
+  color: #e882e8;
+  border-color: #e882e8;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .left {
+    padding: 0;
+    margin-left: 0;
+    width: 80%;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: 40px;
+  }
+  .container .left #mockup {
+    min-width: 100px;
+    height: 220px;
+    max-width: 400px;
+  }
+  .container .left #logo {
+    width: 150px;
+    margin-bottom: 40px;
+  }
+  .container .right {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container .right h1 {
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container .right p {
+    font-size: 16px;
+  }
+  .container .right button {
+    margin-bottom: 50px;
+  }
+  .container .right .social .social-button {
+    width: 35px;
+    height: 35px;
+  }
+  .container .right .social .social-button i {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

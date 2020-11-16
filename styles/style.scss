@@ -1,0 +1,171 @@
+//Variables
+
+$Violet: hsl(257, 40%, 49%);
+$SoftMagenta: hsl(300, 69%, 71%);
+
+$Poppins: 'Poppins', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: $Violet;
+
+  font-family: $Poppins;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+
+  .left {
+    width: 60%;
+    margin-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    #logo {
+      margin-bottom: 60px;
+      width: 180px;
+    }
+  }
+  .right {
+    width: 40%;
+    height: 100%;
+    margin-right: 60px;
+    h1 {
+      margin-top: 175px;
+      max-width: 100%;
+      color: white;
+      font-family: $Poppins;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 38px;
+    }
+
+    p {
+      color: white;
+      font-family: $Poppins;
+      font-weight: 300;
+      max-width: 90%;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    button {
+      width: 180px;
+      height: 50px;
+      border-radius: 26px;
+      color: $Violet;
+      margin-bottom: 100px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-family: $Poppins;
+      box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background-color: $SoftMagenta;
+    }
+
+    .social {
+      display: flex;
+
+      justify-content: flex-end;
+      margin-right: 0px;
+
+      .social-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s ease-in;
+        color: white;
+
+        i {
+          transform: scale(1.5);
+        }
+      }
+      .social-button:hover {
+        color: $SoftMagenta;
+        border-color: $SoftMagenta;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    .left {
+      padding: 0;
+      margin-left: 0;
+      width: 80%;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin-bottom: 40px;
+
+      #mockup {
+        min-width: 100px;
+
+        height: 220px;
+        max-width: 400px;
+      }
+      #logo {
+        width: 150px;
+        margin-bottom: 40px;
+      }
+    }
+    .right {
+      padding: 0;
+      margin: 0;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      button {
+        margin-bottom: 50px;
+      }
+
+      .social {
+        .social-button {
+          width: 35px;
+          height: 35px;
+          i {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
